@@ -1,1 +1,208 @@
-<!DOCTYPE html> <html lang="en"> <head> <meta charset="utf-8"> <meta name="viewport" content="width=device-width, initial-scale=1"> <title>StudioDesk — Online booking for yoga, Pilates &amp; Lagree studios</title> <meta name="description" content="StudioDesk gives your studio real online booking — clients pick a class, pay a deposit, get instant confirmation. No monthly fees, ever."> <link rel="stylesheet" href="styles.css"> <style> .locale-switch { position: relative; margin-right: 12px; } .locale-btn { display: flex; align-items: center; gap: 4px; background: transparent; border: 1px solid var(--hairline-strong); border-radius: 2px; padding: 8px 14px; font-family: var(--font-body); font-size: 13px; font-weight: 500; color: var(--ink); cursor: pointer; } .locale-menu { display: none; position: absolute; top: 38px; right: 0; background: var(--cream); border: 1px solid var(--hairline-strong); border-radius: 2px; box-shadow: 0 4px 8px rgba(20,23,26,0.06), 0 16px 32px rgba(20,23,26,0.10); overflow: hidden; min-width: 80px; z-index: 30; } .locale-switch.open .locale-menu { display: block; } .locale-menu button { display: block; width: 100%; text-align: left; padding: 10px 14px; background: transparent; border: none; font-family: var(--font-body); font-size: 13px; color: var(--ink); cursor: pointer; } .locale-menu button:hover { background: var(--band-light); } .nav-right { display: flex; align-items: center; } </style> </head> <body> <header class="nav"> <div class="nav-brand"> <svg width="26" height="26" viewBox="0 0 30 30"> <line x1="4" y1="15" x2="26" y2="15" stroke="oklch(0.32 0.05 340)" stroke-width="1.4"/> <circle cx="15" cy="15" r="11" fill="none" stroke="oklch(0.32 0.05 340)" stroke-width="1.4"/> </svg> <div class="nav-wordmark">StudioDesk</div> </div> <nav class="nav-links"> <a href="#features" data-i18n="nav_features">Features</a> <a href="#pricing" data-i18n="nav_pricing">Pricing</a> <a href="#faq" data-i18n="nav_faq">FAQ</a> </nav> <div class="nav-right"> <div class="locale-switch" id="localeSwitch"> <button class="locale-btn" id="localeBtn" aria-haspopup="true" aria-expanded="false">EN</button> <div class="locale-menu"> <button data-locale="en">EN</button> <button data-locale="zh-hant">繁</button> <button data-locale="zh-hans">简</button> </div> </div> <a class="btn btn-outline btn-sm" href="#pricing" data-i18n="nav_get_started">Get Started</a> </div> </header> <section class="hero"> <div class="eyebrow" data-i18n="eyebrow">For yoga, Pilates &amp; Lagree studios · Australia</div> <h1><span data-i18n="h1_line1">Clients book online.</span><br><span class="accent" data-i18n="h1_line2">You never lift a phone.</span></h1> <p class="hero-body" data-i18n="hero_body">StudioDesk gives your studio real online booking — clients pick a class, pay a deposit, get instant confirmation, and it's blocked in your calendar automatically. No more DMs and texts.</p> <div class="hero-noline" data-i18n="hero_noline">No monthly fees. Ever.</div> <div class="hero-actions"> <a class="btn btn-filled" href="#pricing" data-i18n="hero_btn1">See Packages</a> <a class="btn btn-outline-light" href="#how" data-i18n="hero_btn2">See How Booking Works</a> </div> <div class="hero-stats"> <div> <div class="stat-num">24/7</div> <div class="stat-label" data-i18n="stat1">Online booking</div> </div> <div> <div class="stat-num">0%</div> <div class="stat-label" data-i18n="stat2">Commission, ever</div> </div> <div> <div class="stat-num">3</div> <div class="stat-label" data-i18n="stat3">Days to go live</div> </div> </div> </section> <section class="logo-band"> <div class="logo-band-label" data-i18n="logo_label">Mark &amp; wordmark</div> <div class="logo-band-mark"> <svg width="60" height="60" viewBox="0 0 30 30"> <line x1="4" y1="15" x2="26" y2="15" stroke="oklch(0.78 0.08 340)" stroke-width="1.2"/> <circle cx="15" cy="15" r="11" fill="none" stroke="oklch(0.78 0.08 340)" stroke-width="1.2"/> </svg> <div class="logo-band-wordmark">StudioDesk</div> </div> <div class="logo-band-types"> <div> <div class="type-name">Fraunces</div> <div data-i18n="logo_type1">Display &amp; wordmark</div> </div> <div> <div class="type-name sans">Inter</div> <div data-i18n="logo_type2">UI &amp; body text</div> </div> </div> </section> <section id="how" class="how"> <div class="section-head"> <div class="section-eyebrow" data-i18n="how_eyebrow">How online booking works</div> <h2 data-i18n="how_h2">From click to confirmed, in under a minute</h2> </div> <div class="how-grid"> <div class="how-cell"> <div class="how-num">01</div> <h3 data-i18n="how1_h">Pick a class</h3> <p data-i18n="how1_p">Yoga, Pilates, or Lagree — they choose, see the price instantly.</p> </div> <div class="how-cell"> <div class="how-num">02</div> <h3 data-i18n="how2_h">Pick a time</h3> <p data-i18n="how2_p">Only real available slots show — full classes are hidden automatically.</p> </div> <div class="how-cell"> <div class="how-num">03</div> <h3 data-i18n="how3_h">Confirm details</h3> <p data-i18n="how3_p">Name, phone, email. Deposit instructions shown automatically.</p> </div> <div class="how-cell"> <div class="how-num">04</div> <h3 data-i18n="how4_h">Done — you're notified</h3> <p data-i18n="how4_p">Client gets a confirmation email. You get an instant alert. Slot is locked.</p> </div> </div> </section> <section id="features" class="features"> <div class="section-head"> <div class="section-eyebrow" data-i18n="feat_eyebrow">Everything included</div> <h2 data-i18n="feat_h2">Built for how studios actually run</h2> </div> <div class="features-grid"> <div class="feature-cell"> <h3 data-i18n="feat1_h">Online Booking</h3> <p data-i18n="feat1_p">Clients book 24/7 via your link. No app download, no account needed for them.</p> </div> <div class="feature-cell"> <h3 data-i18n="feat2_h">Double-Booking Protection</h3> <p data-i18n="feat2_p">A spot can never be booked twice — even if two clients click at the exact same second.</p> </div> <div class="feature-cell"> <h3 data-i18n="feat3_h">Email Confirmations</h3> <p data-i18n="feat3_p">Branded confirmation sent instantly, plus an automatic reminder 24 hours before.</p> </div> <div class="feature-cell"> <h3 data-i18n="feat4_h">Deposit via Bank Transfer</h3> <p data-i18n="feat4_p">Show your own bank details in the confirmation email — no fees, full control.</p> </div> <div class="feature-cell"> <h3 data-i18n="feat5_h">Client Notes</h3> <p data-i18n="feat5_p">Injuries, preferences, modifications — everything you need to remember per client.</p> </div> <div class="feature-cell"> <h3 data-i18n="feat6_h">Income &amp; Expenses</h3> <p data-i18n="feat6_p">Track every payment and expense, see your net profit at a glance.</p> </div> </div> </section> <section id="pricing" class="pricing"> <div class="section-head"> <div class="section-eyebrow" data-i18n="pricing_eyebrow">Packages</div> <h2 data-i18n="pricing_h2">One price. No monthly fees. Ever.</h2> </div> <div class="pricing-grid"> <div class="plan"> <div class="plan-name" data-i18n="plan1_name">Basic</div> <div class="plan-price">$399</div> <div class="plan-note" data-i18n="plan_note">AUD · one-time</div> <div class="plan-features" data-i18n="plan1_features">Full studio management app<br>Clients, finances, price list<br>Manual calendar entry<br>Live in 3 business days</div> <a class="btn btn-outline plan-cta" href="https://buy.stripe.com/00wcN5bWkecp3a5c4I6c000" data-i18n="plan1_cta">Order Basic — $399</a> </div> <div class="plan plan-popular"> <div class="popular-badge"><span data-i18n="most_popular">Most Popular</span></div> <div class="plan-name" data-i18n="plan2_name">Pro</div> <div class="plan-price">$799</div> <div class="plan-note" data-i18n="plan_note">AUD · one-time</div> <div class="plan-features" data-i18n="plan2_features">Everything in Basic<br>24/7 online booking link<br>Email confirmation + reminder<br>Double-booking protection<br>Deposit + bank instructions</div> <a class="btn btn-filled plan-cta" href="https://buy.stripe.com/cNi3cv3pO9W9261b0E6c001" data-i18n="plan2_cta">Order Pro — $799</a> </div> <div class="plan"> <div class="plan-name" data-i18n="plan3_name">Studio</div> <div class="plan-price">$1,299</div> <div class="plan-note" data-i18n="plan_note">AUD · one-time</div> <div class="plan-features" data-i18n="plan3_features">Everything in Pro<br>Custom logo + colour design<br>Exportable branded price list<br>Business setup support</div> <a class="btn btn-outline plan-cta" href="mailto:account@ollieconsult.com?subject=StudioDesk%20Studio%20Enquiry" data-i18n="plan3_cta">Enquire for Studio</a> </div> </div> </section> <section class="cta-band"> <h2 data-i18n="cta_h">Stop chasing bookings on your phone.</h2> <p data-i18n="cta_p">Live in 3 business days. Pay once, own it forever.</p> <div class="hero-actions"> <a class="btn btn-filled" style="background:var(--cream); color:var(--plum);" href="#pricing" data-i18n="cta_btn1">Order Pro — $799</a> <a class="btn btn-outline-onband" href="mailto:account@ollieconsult.com?subject=StudioDesk%20Question" data-i18n="cta_btn2">Ask a Question</a> </div> </section> <footer class="footer"> <div class="footer-brand"> <svg width="20" height="20" viewBox="0 0 30 30"> <line x1="4" y1="15" x2="26" y2="15" stroke="oklch(0.28 0.05 340)" stroke-width="1.2"/> <circle cx="15" cy="15" r="11" fill="none" stroke="oklch(0.28 0.05 340)" stroke-width="1.2"/> </svg> <div class="footer-wordmark">StudioDesk</div> </div> <div class="footer-copy" data-i18n="footer_copy">© 2026 StudioDesk · Parmly Store, Sydney &amp; Hong Kong</div> </footer> <script> var translations = { en: { nav_features: "Features", nav_pricing: "Pricing", nav_faq: "FAQ", nav_get_started: "Get Started", eyebrow: "For yoga, Pilates &amp; Lagree studios \u00b7 Australia", h1_line1: "Clients book online.", h1_line2: "You never lift a phone.", hero_body: "StudioDesk gives your studio real online booking \u2014 clients pick a class, pay a deposit, get instant confirmation, and it's blocked in your calendar automatically. No more DMs and texts.", hero_noline: "No monthly fees. Ever.", hero_btn1: "See Packages", hero_btn2: "See How Booking Works", stat1: "Online booking", stat2: "Commission, ever", stat3: "Days to go live", logo_label: "Mark &amp; wordmark", logo_type1: "Display &amp; wordmark", logo_type2: "UI &amp; body text", how_eyebrow: "How online booking works", how_h2: "From click to confirmed, in under a minute", how1_h: "Pick a class", how1_p: "Yoga, Pilates, or Lagree \u2014 they choose, see the price instantly.", how2_h: "Pick a time", how2_p: "Only real available slots show \u2014 full classes are hidden automatically.", how3_h: "Confirm details", how3_p: "Name, phone, email. Deposit instructions shown automatically.", how4_h: "Done \u2014 you're notified", how4_p: "Client gets a confirmation email. You get an instant alert. Slot is locked.", feat_eyebrow: "Everything included", feat_h2: "Built for how studios actually run", feat1_h: "Online Booking", feat1_p: "Clients book 24/7 via your link. No app download, no account needed for them.", feat2_h: "Double-Booking Protection", feat2_p: "A spot can never be booked twice \u2014 even if two clients click at the exact same second.", feat3_h: "Email Confirmations", feat3_p: "Branded confirmation sent instantly, plus an automatic reminder 24 hours before.", feat4_h: "Deposit via Bank Transfer", feat4_p: "Show your own bank details in the confirmation email \u2014 no fees, full control.", feat5_h: "Client Notes", feat5_p: "Injuries, preferences, modifications \u2014 everything you need to remember per client.", feat6_h: "Income &amp; Expenses", feat6_p: "Track every payment and expense, see your net profit at a glance.", pricing_eyebrow: "Packages", pricing_h2: "One price. No monthly fees. Ever.", plan1_name: "Basic", plan2_name: "Pro", plan3_name: "Studio", plan_note: "AUD \u00b7 one-time", most_popular: "Most Popular", plan1_features: "Full studio management app<br>Clients, finances, price list<br>Manual calendar entry<br>Live in 3 business days", plan2_features: "Everything in Basic<br>24/7 online booking link<br>Email confirmation + reminder<br>Double-booking protection<br>Deposit + bank instructions", plan3_features: "Everything in Pro<br>Custom logo + colour design<br>Exportable branded price list<br>Business setup support", plan1_cta: "Order Basic \u2014 $399", plan2_cta: "Order Pro \u2014 $799", plan3_cta: "Enquire for Studio", cta_h: "Stop chasing bookings on your phone.", cta_p: "Live in 3 business days. Pay once, own it forever.", cta_btn1: "Order Pro \u2014 $799", cta_btn2: "Ask a Question", footer_copy: "\u00a9 2026 StudioDesk \u00b7 Parmly Store, Sydney &amp; Hong Kong" }, "zh-hant": { nav_features: "\u529f\u80fd", nav_pricing: "\u50f9\u683c", nav_faq: "\u5e38\u898b\u554f\u984c", nav_get_started: "\u958b\u59cb\u4f7f\u7528", eyebrow: "\u745c\u4f3d\u3001\u76ae\u62c9\u63d0\u65af\u8207Lagree\u5de5\u4f5c\u5ba4\u5c08\u7528\u30fb\u6fb3\u6d32", h1_line1: "\u5ba2\u4eba\u81ea\u5df1\u5728\u7dda\u9810\u7d04\u3002", h1_line2: "\u4f60\u4e0d\u7528\u518d\u63a5\u96fb\u8a71\u3002", hero_body: "StudioDesk \u8b93\u4f60\u7684\u5de5\u4f5c\u5ba4\u5be6\u73fe\u771f\u6b63\u7684\u7dda\u4e0a\u9810\u7d04\u2014\u2014\u5ba2\u4eba\u9078\u8ab2\u7a0b\u3001\u4ed8\u8a02\u91d1\u3001\u5373\u6642\u7372\u5f97\u78ba\u8a8d\uff0c\u7cfb\u7d71\u81ea\u52d5\u9396\u5b9a\u4f60\u7684\u65e5\u66c6\u3002\u4e0d\u7528\u518d\u56de\u5fae\u4fe1\u548c\u77ed\u8a0a\u3002", hero_noline: "\u6c92\u6709\u6708\u8cbb\uff0c\u6c38\u9060\u6c92\u6709\u3002", hero_btn1: "\u67e5\u770b\u65b9\u6848", hero_btn2: "\u4e86\u89e3\u9810\u7d04\u6d41\u7a0b", stat1: "\u7dda\u4e0a\u9810\u7d04", stat2: "\u6c38\u4e0d\u6536\u53d6\u4f63\u91d1", stat3: "\u5929\u5167\u4e0a\u7dda", logo_label: "\u6a19\u8a8c\u8207\u5b57\u6a19", logo_type1: "\u6a19\u984c\u8207\u5b57\u6a19", logo_type2: "\u4ecb\u9762\u8207\u5167\u6587", how_eyebrow: "\u7dda\u4e0a\u9810\u7d04\u5982\u4f55\u904b\u4f5c", how_h2: "\u5f9e\u9ede\u64ca\u5230\u78ba\u8a8d\uff0c\u4e0d\u5230\u4e00\u5206\u9418", how1_h: "\u9078\u8ab2\u7a0b", how1_p: "\u745c\u4f3d\u3001\u76ae\u62c9\u63d0\u65af\u6216Lagree\u2014\u2014\u5ba2\u4eba\u81ea\u9078\uff0c\u5373\u6642\u770b\u5230\u50f9\u683c\u3002", how2_h: "\u9078\u6642\u9593", how2_p: "\u53ea\u986f\u793a\u771f\u6b63\u6709\u7a7a\u7684\u6642\u6bb5\uff0c\u984d\u6eff\u7684\u8ab2\u7a0b\u81ea\u52d5\u96b1\u85cf\u3002", how3_h: "\u78ba\u8a8d\u8cc7\u6599", how3_p: "\u59d3\u540d\u3001\u96fb\u8a71\u3001\u96fb\u90f5\u3002\u8a02\u91d1\u8aaa\u660e\u81ea\u52d5\u986f\u793a\u3002", how4_h: "\u5b8c\u6210\u2014\u2014\u4f60\u6703\u6536\u5230\u901a\u77e5", how4_p: "\u5ba2\u4eba\u6536\u5230\u78ba\u8a8d\u96fb\u90f5\uff0c\u4f60\u5373\u6642\u6536\u5230\u63d0\u9192\uff0c\u6642\u6bb5\u5df2\u9396\u5b9a\u3002", feat_eyebrow: "\u5168\u90e8\u529f\u80fd\u9f4a\u5099", feat_h2: "\u70ba\u5de5\u4f5c\u5ba4\u5be6\u969b\u904b\u4f5c\u800c\u8a2d\u8a08", feat1_h: "\u7dda\u4e0a\u9810\u7d04", feat1_p: "\u5ba2\u4eba\u53ef\u900f\u904e\u9023\u7d5024\u5c0f\u6642\u9810\u7d04\uff0c\u4e0d\u7528\u4e0b\u8f09\u61c9\u7528\u7a0b\u5f0f\uff0c\u4e5f\u4e0d\u7528\u8a3b\u518a\u5e33\u6236\u3002", feat2_h: "\u9632\u6b62\u91cd\u8907\u9810\u7d04", feat2_p: "\u540c\u4e00\u6642\u6bb5\u7d55\u4e0d\u6703\u88ab\u9810\u7d04\u5169\u6b21\u2014\u2014\u5373\u4f7f\u5169\u4f4d\u5ba2\u4eba\u540c\u6642\u9ede\u64ca\u3002", feat3_h: "\u96fb\u90f5\u78ba\u8a8d", feat3_p: "\u5373\u6642\u767c\u9001\u54c1\u724c\u78ba\u8a8d\u4fe1\uff0c\u4e26\u572824\u5c0f\u6642\u524d\u81ea\u52d5\u767c\u9001\u63d0\u9192\u3002", feat4_h: "\u9280\u884c\u8f49\u5e33\u8a02\u91d1", feat4_p: "\u5728\u78ba\u8a8d\u96fb\u90f5\u4e2d\u986f\u793a\u4f60\u81ea\u5df1\u7684\u9280\u884c\u8cc7\u6599\u2014\u2014\u7121\u624b\u7e8c\u8cbb\uff0c\u5b8c\u5168\u81ea\u4e3b\u3002", feat5_h: "\u5ba2\u6236\u5099\u8a3b", feat5_p: "\u50b7\u60a3\u3001\u504f\u597d\u3001\u8abf\u6574\u2014\u2014\u8a18\u9304\u6bcf\u4f4d\u5ba2\u6236\u7684\u6240\u6709\u9700\u8981\u3002", feat6_h: "\u6536\u652f\u7ba1\u7406", feat6_p: "\u8a18\u9304\u6bcf\u7b46\u6536\u5165\u548c\u652f\u51fa\uff0c\u4e00\u76ee\u4e86\u7136\u6de8\u5229\u6f64\u3002", pricing_eyebrow: "\u65b9\u6848", pricing_h2: "\u55ae\u4e00\u50f9\u9322\uff0c\u6c92\u6709\u6708\u8cbb\uff0c\u6c38\u9060\u6c92\u6709\u3002", plan1_name: "\u57fa\u672c\u7248", plan2_name: "\u5c08\u696d\u7248", plan3_name: "\u5de5\u4f5c\u5ba4\u7248", plan_note: "\u6fb3\u5143\u30fb\u4e00\u6b21\u6027", most_popular: "\u6700\u53d7\u6b61\u8fce", plan1_features: "\u5b8c\u6574\u5de5\u4f5c\u5ba4\u7ba1\u7406\u61c9\u7528<br>\u5ba2\u6236\u3001\u8ca1\u52d9\u3001\u50f9\u76ee\u8868<br>\u624b\u52d5\u65e5\u66c6\u8f38\u5165<br>3\u500b\u5de5\u4f5c\u65e5\u5167\u4e0a\u7dda", plan2_features: "\u5305\u542b\u57fa\u672c\u7248\u5168\u90e8\u529f\u80fd<br>24\u5c0f\u6642\u7dda\u4e0a\u9810\u7d04\u9023\u7d50<br>\u96fb\u90f5\u78ba\u8a8d+\u63d0\u9192<br>\u9632\u6b62\u91cd\u8907\u9810\u7d04<br>\u8a02\u91d1+\u9280\u884c\u8f49\u5e33\u8aaa\u660e", plan3_features: "\u5305\u542b\u5c08\u696d\u7248\u5168\u90e8\u529f\u80fd<br>\u81ea\u8a02\u6a19\u8a8c+\u8272\u5f69\u8a2d\u8a08<br>\u53ef\u532f\u51fa\u54c1\u724c\u50f9\u76ee\u8868<br>\u696d\u52d9\u8a2d\u7f6e\u652f\u63f4", plan1_cta: "\u8a02\u8cfc\u57fa\u672c\u7248 \u2014 $399", plan2_cta: "\u8a02\u8cfc\u5c08\u696d\u7248 \u2014 $799", plan3_cta: "\u67e5\u8a62\u5de5\u4f5c\u5ba4\u7248", cta_h: "\u5225\u518d\u7528\u624b\u6a5f\u8ffd\u8e64\u9810\u7d04\u4e86\u3002", cta_p: "3\u500b\u5de5\u4f5c\u65e5\u5167\u4e0a\u7dda\u3002\u4e00\u6b21\u4ed8\u6b3e\uff0c\u6c38\u4e45\u64c1\u6709\u3002", cta_btn1: "\u8a02\u8cfc\u5c08\u696d\u7248 \u2014 $799", cta_btn2: "\u6709\u554f\u984c\uff1f\u554f\u6211\u5011", footer_copy: "\u00a9 2026 StudioDesk\u30fbParmly Store\uff0c\u60df\u5c3c\u8207\u9999\u6e2f" }, "zh-hans": { nav_features: "\u529f\u80fd", nav_pricing: "\u4ef7\u683c", nav_faq: "\u5e38\u89c1\u95ee\u9898", nav_get_started: "\u5f00\u59cb\u4f7f\u7528", eyebrow: "\u745c\u4f3d\u3001\u666e\u62c9\u63d0\u4e0eLagree\u5de5\u4f5c\u5ba4\u4e13\u7528\u30fb\u6fb3\u6d32", h1_line1: "\u5ba2\u4eba\u81ea\u5df1\u5728\u7ebf\u9884\u7ea6\u3002", h1_line2: "\u4f60\u4e0d\u7528\u518d\u63a5\u7535\u8bdd\u3002", hero_body: "StudioDesk \u8ba9\u4f60\u7684\u5de5\u4f5c\u5ba4\u5b9e\u73b0\u771f\u6b63\u7684\u7ebf\u4e0a\u9884\u7ea6\u2014\u2014\u5ba2\u4eba\u9009\u8bfe\u7a0b\u3001\u4ed8\u5b9a\u91d1\u3001\u5373\u65f6\u83b7\u5f97\u786e\u8ba4\uff0c\u7cfb\u7edf\u81ea\u52a8\u9501\u5b9a\u4f60\u7684\u65e5\u5386\u3002\u4e0d\u7528\u518d\u56de\u5fae\u4fe1\u548c\u77ed\u4fe1\u3002", hero_noline: "\u6ca1\u6709\u6708\u8d39\uff0c\u6c38\u8fdc\u6ca1\u6709\u3002", hero_btn1: "\u67e5\u770b\u65b9\u6848", hero_btn2: "\u4e86\u89e3\u9884\u7ea6\u6d41\u7a0b", stat1: "\u7ebf\u4e0a\u9884\u7ea6", stat2: "\u6c38\u4e0d\u6536\u53d6\u4f63\u91d1", stat3: "\u5929\u5185\u4e0a\u7ebf", logo_label: "\u6807\u5fd7\u4e0e\u5b57\u6807", logo_type1: "\u6807\u9898\u4e0e\u5b57\u6807", logo_type2: "\u754c\u9762\u4e0e\u5185\u6587", how_eyebrow: "\u7ebf\u4e0a\u9884\u7ea6\u5982\u4f55\u8fd0\u4f5c", how_h2: "\u4ece\u70b9\u51fb\u5230\u786e\u8ba4\uff0c\u4e0d\u5230\u4e00\u5206\u949f", how1_h: "\u9009\u8bfe\u7a0b", how1_p: "\u745c\u4f3d\u3001\u666e\u62c9\u63d0\u6216Lagree\u2014\u2014\u5ba2\u4eba\u81ea\u9009\uff0c\u5373\u65f6\u770b\u5230\u4ef7\u683c\u3002", how2_h: "\u9009\u65f6\u95f4", how2_p: "\u53ea\u663e\u793a\u771f\u6b63\u6709\u7a7a\u7684\u65f6\u6bb5\uff0c\u6ee1\u5458\u7684\u8bfe\u7a0b\u81ea\u52a8\u9690\u85cf\u3002", how3_h: "\u786e\u8ba4\u4fe1\u606f", how3_p: "\u59d3\u540d\u3001\u7535\u8bdd\u3001\u90ae\u7bb1\u3002\u5b9a\u91d1\u8bf4\u660e\u81ea\u52a8\u663e\u793a\u3002", how4_h: "\u5b8c\u6210\u2014\u2014\u4f60\u4f1a\u6536\u5230\u901a\u77e5", how4_p: "\u5ba2\u4eba\u6536\u5230\u786e\u8ba4\u90ae\u4ef6\uff0c\u4f60\u5373\u65f6\u6536\u5230\u63d0\u9192\uff0c\u65f6\u6bb5\u5df2\u9501\u5b9a\u3002", feat_eyebrow: "\u5168\u90e8\u529f\u80fd\u9f50\u5907", feat_h2: "\u4e3a\u5de5\u4f5c\u5ba4\u5b9e\u9645\u8fd0\u4f5c\u800c\u8bbe\u8ba1", feat1_h: "\u7ebf\u4e0a\u9884\u7ea6", feat1_p: "\u5ba2\u4eba\u53ef\u901a\u8fc7\u94fe\u63a524\u5c0f\u65f6\u9884\u7ea6\uff0c\u4e0d\u7528\u4e0b\u8f7d\u5e94\u7528\uff0c\u4e5f\u4e0d\u7528\u6ce8\u518c\u8d26\u6237\u3002", feat2_h: "\u9632\u6b62\u91cd\u590d\u9884\u7ea6", feat2_p: "\u540c\u4e00\u65f6\u6bb5\u7edd\u4e0d\u4f1a\u88ab\u9884\u7ea6\u4e24\u6b21\u2014\u2014\u5373\u4f7f\u4e24\u4f4d\u5ba2\u4eba\u540c\u65f6\u70b9\u51fb\u3002", feat3_h: "\u90ae\u4ef6\u786e\u8ba4", feat3_p: "\u5373\u65f6\u53d1\u9001\u54c1\u724c\u786e\u8ba4\u90ae\u4ef6\uff0c\u5e76\u572824\u5c0f\u65f6\u524d\u81ea\u52a8\u53d1\u9001\u63d0\u9192\u3002", feat4_h: "\u94f6\u884c\u8f6c\u8d26\u5b9a\u91d1", feat4_p: "\u5728\u786e\u8ba4\u90ae\u4ef6\u4e2d\u663e\u793a\u4f60\u81ea\u5df1\u7684\u94f6\u884c\u4fe1\u606f\u2014\u2014\u65e0\u624b\u7eed\u8d39\uff0c\u5b8c\u5168\u81ea\u4e3b\u3002", feat5_h: "\u5ba2\u6237\u5907\u6ce8", feat5_p: "\u4f24\u75c5\u3001\u504f\u597d\u3001\u8c03\u6574\u2014\u2014\u8bb0\u5f55\u6bcf\u4f4d\u5ba2\u6237\u7684\u6240\u6709\u9700\u8981\u3002", feat6_h: "\u6536\u652f\u7ba1\u7406", feat6_p: "\u8bb0\u5f55\u6bcf\u7b14\u6536\u5165\u548c\u652f\u51fa\uff0c\u4e00\u76ee\u4e86\u7136\u51c0\u5229\u6da6\u3002", pricing_eyebrow: "\u65b9\u6848", pricing_h2: "\u5355\u4e00\u4ef7\u683c\uff0c\u6ca1\u6709\u6708\u8d39\uff0c\u6c38\u8fdc\u6ca1\u6709\u3002", plan1_name: "\u57fa\u7840\u7248", plan2_name: "\u4e13\u4e1a\u7248", plan3_name: "\u5de5\u4f5c\u5ba4\u7248", plan_note: "\u6fb3\u5143\u30fb\u4e00\u6b21\u6027", most_popular: "\u6700\u53d7\u6b22\u8fce", plan1_features: "\u5b8c\u6574\u5de5\u4f5c\u5ba4\u7ba1\u7406\u5e94\u7528<br>\u5ba2\u6237\u3001\u8d22\u52a1\u3001\u4ef7\u76ee\u8868<br>\u624b\u52a8\u65e5\u5386\u8f93\u5165<br>3\u4e2a\u5de5\u4f5c\u65e5\u5185\u4e0a\u7ebf", plan2_features: "\u5305\u542b\u57fa\u7840\u7248\u5168\u90e8\u529f\u80fd<br>24\u5c0f\u65f6\u7ebf\u4e0a\u9884\u7ea6\u94fe\u63a5<br>\u90ae\u4ef6\u786e\u8ba4+\u63d0\u9192<br>\u9632\u6b62\u91cd\u590d\u9884\u7ea6<br>\u5b9a\u91d1+\u94f6\u884c\u8f6c\u8d26\u8bf4\u660e", plan3_features: "\u5305\u542b\u4e13\u4e1a\u7248\u5168\u90e8\u529f\u80fd<br>\u81ea\u5b9a\u4e49\u6807\u5fd7+\u989c\u8272\u8bbe\u8ba1<br>\u53ef\u5bfc\u51fa\u54c1\u724c\u4ef7\u76ee\u8868<br>\u4e1a\u52a1\u8bbe\u7f6e\u652f\u6301", plan1_cta: "\u8ba2\u8d2d\u57fa\u7840\u7248 \u2014 $399", plan2_cta: "\u8ba2\u8d2d\u4e13\u4e1a\u7248 \u2014 $799", plan3_cta: "\u54a8\u8be2\u5de5\u4f5c\u5ba4\u7248", cta_h: "\u522b\u518d\u7528\u624b\u673a\u8ffd\u8e2a\u9884\u7ea6\u4e86\u3002", cta_p: "3\u4e2a\u5de5\u4f5c\u65e5\u5185\u4e0a\u7ebf\u3002\u4e00\u6b21\u4ed8\u6b3e\uff0c\u6c38\u4e45\u62e5\u6709\u3002", cta_btn1: "\u8ba2\u8d2d\u4e13\u4e1a\u7248 \u2014 $799", cta_btn2: "\u6709\u95ee\u9898\uff1f\u95ee\u6211\u4eec", footer_copy: "\u00a9 2026 StudioDesk\u30fbParmly Store\uff0c\u6089\u5c3c\u4e0e\u9999\u6e2f" } }; function applyLocale(lang) { var dict = translations[lang] || translations.en; document.querySelectorAll('[data-i18n]').forEach(function (el) { var key = el.getAttribute('data-i18n'); if (dict[key]) el.innerHTML = dict[key]; }); var labels = { en: 'EN', 'zh-hant': '\u7e41', 'zh-hans': '\u7b80' }; document.getElementById('localeBtn').textContent = labels[lang] || 'EN'; document.documentElement.lang = lang === 'en' ? 'en' : (lang === 'zh-hant' ? 'zh-Hant' : 'zh-Hans'); try { localStorage.setItem('studiodesk_locale', lang); } catch (e) {} } var sw = document.getElementById('localeSwitch'); var btn = document.getElementById('localeBtn'); btn.addEventListener('click', function () { sw.classList.toggle('open'); btn.setAttribute('aria-expanded', sw.classList.contains('open')); }); document.addEventListener('click', function (e) { if (!sw.contains(e.target)) sw.classList.remove('open'); }); document.querySelectorAll('.locale-menu button').forEach(function (b) { b.addEventListener('click', function () { applyLocale(b.getAttribute('data-locale')); sw.classList.remove('open'); }); }); (function initLocale() { var saved = null; try { saved = localStorage.getItem('studiodesk_locale'); } catch (e) {} var path = window.location.pathname; var initial = saved || (path.indexOf('/cn/') !== -1 ? 'zh-hans' : 'en'); applyLocale(initial); })(); </script> </body> </html> 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>StudioDesk — Online booking for yoga, Pilates &amp; Lagree studios</title>
+<meta name="description" content="StudioDesk gives your studio real online booking — clients pick a class, pay a deposit, get instant confirmation. No monthly fees, ever.">
+<link rel="stylesheet" href="styles.css">
+<style>
+.locale-switch { position: relative; margin-right: 12px; }
+.locale-btn { display: flex; align-items: center; gap: 4px; background: transparent; border: 1px solid var(--hairline-strong); border-radius: 2px; padding: 8px 14px; font-family: var(--font-body); font-size: 13px; font-weight: 500; color: var(--ink); cursor: pointer; }
+.locale-menu { display: none; position: absolute; top: 38px; right: 0; background: var(--cream); border: 1px solid var(--hairline-strong); border-radius: 2px; box-shadow: 0 4px 8px rgba(20,23,26,0.06), 0 16px 32px rgba(20,23,26,0.10); overflow: hidden; min-width: 80px; z-index: 30; }
+.locale-switch.open .locale-menu { display: block; }
+.locale-menu button { display: block; width: 100%; text-align: left; padding: 10px 14px; background: transparent; border: none; font-family: var(--font-body); font-size: 13px; color: var(--ink); cursor: pointer; }
+.locale-menu button:hover { background: var(--band-light); }
+.nav-right { display: flex; align-items: center; }
+</style>
+</head>
+<body>
+<header class="nav">
+<div class="nav-brand">
+<svg width="26" height="26" viewBox="0 0 30 30">
+<line x1="4" y1="15" x2="26" y2="15" stroke="#4F5B3E" stroke-width="1.4"/>
+<circle cx="15" cy="15" r="11" fill="none" stroke="#4F5B3E" stroke-width="1.4"/>
+</svg>
+<div class="nav-wordmark">StudioDesk</div>
+</div>
+<nav class="nav-links">
+<a href="#features" data-i18n="nav_features">Features</a>
+<a href="#pricing" data-i18n="nav_pricing">Pricing</a>
+<a href="#faq" data-i18n="nav_faq">FAQ</a>
+</nav>
+<div class="nav-right">
+<div class="locale-switch" id="localeSwitch">
+<button class="locale-btn" id="localeBtn" aria-haspopup="true" aria-expanded="false">EN</button>
+<div class="locale-menu">
+<button data-locale="en">EN</button>
+<button data-locale="zh-hant">繁</button>
+<button data-locale="zh-hans">简</button>
+</div>
+</div>
+<a class="btn btn-outline btn-sm" href="#pricing" data-i18n="nav_get_started">Get Started</a>
+</div>
+</header>
+<section class="hero">
+<div class="eyebrow" data-i18n="eyebrow">For yoga, Pilates &amp; Lagree studios · Australia</div>
+<h1><span data-i18n="h1_line1">Clients book online.</span><br><span class="accent" data-i18n="h1_line2">You never lift a phone.</span></h1>
+<p class="hero-body" data-i18n="hero_body">StudioDesk gives your studio real online booking — clients pick a class, pay a deposit, get instant confirmation, and it's blocked in your calendar automatically. No more DMs and texts.</p>
+<div class="hero-noline" data-i18n="hero_noline">No monthly fees. Ever.</div>
+<div class="hero-actions">
+<a class="btn btn-filled" href="#pricing" data-i18n="hero_btn1">See Packages</a>
+<a class="btn btn-outline-light" href="#how" data-i18n="hero_btn2">See How Booking Works</a>
+</div>
+<div class="hero-stats">
+<div>
+<div class="stat-num">24/7</div>
+<div class="stat-label" data-i18n="stat1">Online booking</div>
+</div>
+<div>
+<div class="stat-num">0%</div>
+<div class="stat-label" data-i18n="stat2">Commission, ever</div>
+</div>
+<div>
+<div class="stat-num">3</div>
+<div class="stat-label" data-i18n="stat3">Days to go live</div>
+</div>
+</div>
+</section>
+<section class="logo-band">
+<div class="logo-band-label" data-i18n="logo_label">Mark &amp; wordmark</div>
+<div class="logo-band-mark">
+<svg width="60" height="60" viewBox="0 0 30 30">
+<line x1="4" y1="15" x2="26" y2="15" stroke="#B9C7A8" stroke-width="1.2"/>
+<circle cx="15" cy="15" r="11" fill="none" stroke="#B9C7A8" stroke-width="1.2"/>
+</svg>
+<div class="logo-band-wordmark">StudioDesk</div>
+</div>
+<div class="logo-band-types">
+<div>
+<div class="type-name">Fraunces</div>
+<div data-i18n="logo_type1">Display &amp; wordmark</div>
+</div>
+<div>
+<div class="type-name sans">Inter</div>
+<div data-i18n="logo_type2">UI &amp; body text</div>
+</div>
+</div>
+</section>
+<section id="how" class="how">
+<div class="section-head">
+<div class="section-eyebrow" data-i18n="how_eyebrow">How online booking works</div>
+<h2 data-i18n="how_h2">From click to confirmed, in under a minute</h2>
+</div>
+<div class="how-grid">
+<div class="how-cell">
+<div class="how-num">01</div>
+<h3 data-i18n="how1_h">Pick a class</h3>
+<p data-i18n="how1_p">Yoga, Pilates, or Lagree — they choose, see the price instantly.</p>
+</div>
+<div class="how-cell">
+<div class="how-num">02</div>
+<h3 data-i18n="how2_h">Pick a time</h3>
+<p data-i18n="how2_p">Only real available slots show — full classes are hidden automatically.</p>
+</div>
+<div class="how-cell">
+<div class="how-num">03</div>
+<h3 data-i18n="how3_h">Confirm details</h3>
+<p data-i18n="how3_p">Name, phone, email. Deposit instructions shown automatically.</p>
+</div>
+<div class="how-cell">
+<div class="how-num">04</div>
+<h3 data-i18n="how4_h">Done — you're notified</h3>
+<p data-i18n="how4_p">Client gets a confirmation email. You get an instant alert. Slot is locked.</p>
+</div>
+</div>
+</section>
+<section id="features" class="features">
+<div class="section-head">
+<div class="section-eyebrow" data-i18n="feat_eyebrow">Everything included</div>
+<h2 data-i18n="feat_h2">Built for how studios actually run</h2>
+</div>
+<div class="features-grid">
+<div class="feature-cell">
+<h3 data-i18n="feat1_h">Online Booking</h3>
+<p data-i18n="feat1_p">Clients book 24/7 via your link. No app download, no account needed for them.</p>
+</div>
+<div class="feature-cell">
+<h3 data-i18n="feat2_h">Double-Booking Protection</h3>
+<p data-i18n="feat2_p">A spot can never be booked twice — even if two clients click at the exact same second.</p>
+</div>
+<div class="feature-cell">
+<h3 data-i18n="feat3_h">Email Confirmations</h3>
+<p data-i18n="feat3_p">Branded confirmation sent instantly, plus an automatic reminder 24 hours before.</p>
+</div>
+<div class="feature-cell">
+<h3 data-i18n="feat4_h">Deposit via Bank Transfer</h3>
+<p data-i18n="feat4_p">Show your own bank details in the confirmation email — no fees, full control.</p>
+</div>
+<div class="feature-cell">
+<h3 data-i18n="feat5_h">Client Notes</h3>
+<p data-i18n="feat5_p">Injuries, preferences, modifications — everything you need to remember per client.</p>
+</div>
+<div class="feature-cell">
+<h3 data-i18n="feat6_h">Income &amp; Expenses</h3>
+<p data-i18n="feat6_p">Track every payment and expense, see your net profit at a glance.</p>
+</div>
+</div>
+</section>
+<section id="pricing" class="pricing">
+<div class="section-head">
+<div class="section-eyebrow" data-i18n="pricing_eyebrow">Packages</div>
+<h2 data-i18n="pricing_h2">One price. No monthly fees. Ever.</h2>
+</div>
+<div class="pricing-grid">
+<div class="plan">
+<div class="plan-name" data-i18n="plan1_name">Basic</div>
+<div class="plan-price">$399</div>
+<div class="plan-note" data-i18n="plan_note">AUD · one-time</div>
+<div class="plan-features" data-i18n="plan1_features">Full studio management app<br>Clients, finances, price list<br>Manual calendar entry<br>Live in 3 business days</div>
+<a class="btn btn-outline plan-cta" href="https://buy.stripe.com/00wcN5bWkecp3a5c4I6c000" data-i18n="plan1_cta">Order Basic — $399</a>
+</div>
+<div class="plan plan-popular">
+<div class="popular-badge"><span data-i18n="most_popular">Most Popular</span></div>
+<div class="plan-name" data-i18n="plan2_name">Pro</div>
+<div class="plan-price">$799</div>
+<div class="plan-note" data-i18n="plan_note">AUD · one-time</div>
+<div class="plan-features" data-i18n="plan2_features">Everything in Basic<br>24/7 online booking link<br>Email confirmation + reminder<br>Double-booking protection<br>Deposit + bank instructions</div>
+<a class="btn btn-filled plan-cta" href="https://buy.stripe.com/cNi3cv3pO9W9261b0E6c001" data-i18n="plan2_cta">Order Pro — $799</a>
+</div>
+<div class="plan">
+<div class="plan-name" data-i18n="plan3_name">Studio</div>
+<div class="plan-price">$1,299</div>
+<div class="plan-note" data-i18n="plan_note">AUD · one-time</div>
+<div class="plan-features" data-i18n="plan3_features">Everything in Pro<br>Custom logo + colour design<br>Exportable branded price list<br>Business setup support</div>
+<a class="btn btn-outline plan-cta" href="mailto:account@ollieconsult.com?subject=StudioDesk%20Studio%20Enquiry" data-i18n="plan3_cta">Enquire for Studio</a>
+</div>
+</div>
+</section>
+<section class="cta-band">
+<h2 data-i18n="cta_h">Stop chasing bookings on your phone.</h2>
+<p data-i18n="cta_p">Live in 3 business days. Pay once, own it forever.</p>
+<div class="hero-actions">
+<a class="btn btn-filled" style="background:var(--cream); color:var(--plum);" href="#pricing" data-i18n="cta_btn1">Order Pro — $799</a>
+<a class="btn btn-outline-onband" href="mailto:account@ollieconsult.com?subject=StudioDesk%20Question" data-i18n="cta_btn2">Ask a Question</a>
+</div>
+</section>
+<footer class="footer">
+<div class="footer-brand">
+<svg width="20" height="20" viewBox="0 0 30 30">
+<line x1="4" y1="15" x2="26" y2="15" stroke="#33402A" stroke-width="1.2"/>
+<circle cx="15" cy="15" r="11" fill="none" stroke="#33402A" stroke-width="1.2"/>
+</svg>
+<div class="footer-wordmark">StudioDesk</div>
+</div>
+<div class="footer-copy" data-i18n="footer_copy">© 2026 StudioDesk · Parmly Store, Australia</div>
+</footer>
+<script>
+var translations = { en: { nav_features: "Features", nav_pricing: "Pricing", nav_faq: "FAQ", nav_get_started: "Get Started", eyebrow: "For yoga, Pilates &amp; Lagree studios · Australia", h1_line1: "Clients book online.", h1_line2: "You never lift a phone.", hero_body: "StudioDesk gives your studio real online booking — clients pick a class, pay a deposit, get instant confirmation, and it's blocked in your calendar automatically. No more DMs and texts.", hero_noline: "No monthly fees. Ever.", hero_btn1: "See Packages", hero_btn2: "See How Booking Works", stat1: "Online booking", stat2: "Commission, ever", stat3: "Days to go live", logo_label: "Mark &amp; wordmark", logo_type1: "Display &amp; wordmark", logo_type2: "UI &amp; body text", how_eyebrow: "How online booking works", how_h2: "From click to confirmed, in under a minute", how1_h: "Pick a class", how1_p: "Yoga, Pilates, or Lagree — they choose, see the price instantly.", how2_h: "Pick a time", how2_p: "Only real available slots show — full classes are hidden automatically.", how3_h: "Confirm details", how3_p: "Name, phone, email. Deposit instructions shown automatically.", how4_h: "Done — you're notified", how4_p: "Client gets a confirmation email. You get an instant alert. Slot is locked.", feat_eyebrow: "Everything included", feat_h2: "Built for how studios actually run", feat1_h: "Online Booking", feat1_p: "Clients book 24/7 via your link. No app download, no account needed for them.", feat2_h: "Double-Booking Protection", feat2_p: "A spot can never be booked twice — even if two clients click at the exact same second.", feat3_h: "Email Confirmations", feat3_p: "Branded confirmation sent instantly, plus an automatic reminder 24 hours before.", feat4_h: "Deposit via Bank Transfer", feat4_p: "Show your own bank details in the confirmation email — no fees, full control.", feat5_h: "Client Notes", feat5_p: "Injuries, preferences, modifications — everything you need to remember per client.", feat6_h: "Income &amp; Expenses", feat6_p: "Track every payment and expense, see your net profit at a glance.", pricing_eyebrow: "Packages", pricing_h2: "One price. No monthly fees. Ever.", plan1_name: "Basic", plan2_name: "Pro", plan3_name: "Studio", plan_note: "AUD · one-time", most_popular: "Most Popular", plan1_features: "Full studio management app<br>Clients, finances, price list<br>Manual calendar entry<br>Live in 3 business days", plan2_features: "Everything in Basic<br>24/7 online booking link<br>Email confirmation + reminder<br>Double-booking protection<br>Deposit + bank instructions", plan3_features: "Everything in Pro<br>Custom logo + colour design<br>Exportable branded price list<br>Business setup support", plan1_cta: "Order Basic — $399", plan2_cta: "Order Pro — $799", plan3_cta: "Enquire for Studio", cta_h: "Stop chasing bookings on your phone.", cta_p: "Live in 3 business days. Pay once, own it forever.", cta_btn1: "Order Pro — $799", cta_btn2: "Ask a Question", footer_copy: "© 2026 StudioDesk · Parmly Store, Australia" }, "zh-hant": { nav_features: "功能", nav_pricing: "價格", nav_faq: "常見問題", nav_get_started: "開始使用", eyebrow: "瑜伽、皮拉提斯與Lagree工作室專用・澳洲", h1_line1: "客人自己在線預約。", h1_line2: "你不用再接電話。", hero_body: "StudioDesk 讓你的工作室實現真正的線上預約——客人選課程、付訂金、即時獲得確認，系統自動鎖定你的日曆。不用再回微信和短訊。", hero_noline: "沒有月費，永遠沒有。", hero_btn1: "查看方案", hero_btn2: "了解預約流程", stat1: "線上預約", stat2: "永不收取佣金", stat3: "天內上線", logo_label: "標誌與字標", logo_type1: "標題與字標", logo_type2: "介面與內文", how_eyebrow: "線上預約如何運作", how_h2: "從點擊到確認，不到一分鐘", how1_h: "選課程", how1_p: "瑜伽、皮拉提斯或Lagree——客人自選，即時看到價格。", how2_h: "選時間", how2_p: "只顯示真正有空的時段，額滿的課程自動隱藏。", how3_h: "確認資料", how3_p: "姓名、電話、電郵。訂金說明自動顯示。", how4_h: "完成——你會收到通知", how4_p: "客人收到確認電郵，你即時收到提醒，時段已鎖定。", feat_eyebrow: "全部功能齊備", feat_h2: "為工作室實際運作而設計", feat1_h: "線上預約", feat1_p: "客人可透過連結24小時預約，不用下載應用程式，也不用註冊帳戶。", feat2_h: "防止重複預約", feat2_p: "同一時段絕不會被預約兩次——即使兩位客人同時點擊。", feat3_h: "電郵確認", feat3_p: "即時發送品牌確認信，並在24小時前自動發送提醒。", feat4_h: "銀行轉帳訂金", feat4_p: "在確認電郵中顯示你自己的銀行資料——無手續費，完全自主。", feat5_h: "客戶備註", feat5_p: "傷患、偏好、調整——記錄每位客戶的所有需要。", feat6_h: "收支管理", feat6_p: "記錄每筆收入和支出，一目了然淨利潤。", pricing_eyebrow: "方案", pricing_h2: "單一價錢，沒有月費，永遠沒有。", plan1_name: "基本版", plan2_name: "專業版", plan3_name: "工作室版", plan_note: "澳元・一次性", most_popular: "最受歡迎", plan1_features: "完整工作室管理應用<br>客戶、財務、價目表<br>手動日曆輸入<br>3個工作日內上線", plan2_features: "包含基本版全部功能<br>24小時線上預約連結<br>電郵確認+提醒<br>防止重複預約<br>訂金+銀行轉帳說明", plan3_features: "包含專業版全部功能<br>自訂標誌+色彩設計<br>可匯出品牌價目表<br>業務設置支援", plan1_cta: "訂購基本版 — $399", plan2_cta: "訂購專業版 — $799", plan3_cta: "查詢工作室版", cta_h: "別再用手機追蹤預約了。", cta_p: "3個工作日內上線。一次付款，永久擁有。", cta_btn1: "訂購專業版 — $799", cta_btn2: "有問題？問我們", footer_copy: "© 2026 StudioDesk・Parmly Store，澳洲" }, "zh-hans": { nav_features: "功能", nav_pricing: "价格", nav_faq: "常见问题", nav_get_started: "开始使用", eyebrow: "瑜伽、普拉提与Lagree工作室专用・澳洲", h1_line1: "客人自己在线预约。", h1_line2: "你不用再接电话。", hero_body: "StudioDesk 让你的工作室实现真正的线上预约——客人选课程、付定金、即时获得确认，系统自动锁定你的日历。不用再回微信和短信。", hero_noline: "没有月费，永远没有。", hero_btn1: "查看方案", hero_btn2: "了解预约流程", stat1: "线上预约", stat2: "永不收取佣金", stat3: "天内上线", logo_label: "标志与字标", logo_type1: "标题与字标", logo_type2: "界面与内文", how_eyebrow: "线上预约如何运作", how_h2: "从点击到确认，不到一分钟", how1_h: "选课程", how1_p: "瑜伽、普拉提或Lagree——客人自选，即时看到价格。", how2_h: "选时间", how2_p: "只显示真正有空的时段，满员的课程自动隐藏。", how3_h: "确认信息", how3_p: "姓名、电话、邮箱。定金说明自动显示。", how4_h: "完成——你会收到通知", how4_p: "客人收到确认邮件，你即时收到提醒，时段已锁定。", feat_eyebrow: "全部功能齐备", feat_h2: "为工作室实际运作而设计", feat1_h: "线上预约", feat1_p: "客人可通过链接24小时预约，不用下载应用，也不用注册账户。", feat2_h: "防止重复预约", feat2_p: "同一时段绝不会被预约两次——即使两位客人同时点击。", feat3_h: "邮件确认", feat3_p: "即时发送品牌确认邮件，并在24小时前自动发送提醒。", feat4_h: "银行转账定金", feat4_p: "在确认邮件中显示你自己的银行信息——无手续费，完全自主。", feat5_h: "客户备注", feat5_p: "伤病、偏好、调整——记录每位客户的所有需要。", feat6_h: "收支管理", feat6_p: "记录每笔收入和支出，一目了然净利润。", pricing_eyebrow: "方案", pricing_h2: "单一价格，没有月费，永远没有。", plan1_name: "基础版", plan2_name: "专业版", plan3_name: "工作室版", plan_note: "澳元・一次性", most_popular: "最受欢迎", plan1_features: "完整工作室管理应用<br>客户、财务、价目表<br>手动日历输入<br>3个工作日内上线", plan2_features: "包含基础版全部功能<br>24小时线上预约链接<br>邮件确认+提醒<br>防止重复预约<br>定金+银行转账说明", plan3_features: "包含专业版全部功能<br>自定义标志+颜色设计<br>可导出品牌价目表<br>业务设置支持", plan1_cta: "订购基础版 — $399", plan2_cta: "订购专业版 — $799", plan3_cta: "咨询工作室版", cta_h: "别再用手机追踪预约了。", cta_p: "3个工作日内上线。一次付款，永久拥有。", cta_btn1: "订购专业版 — $799", cta_btn2: "有问题？问我们", footer_copy: "© 2026 StudioDesk・Parmly Store，澳洲" } };
+function applyLocale(lang) { var dict = translations[lang] || translations.en; document.querySelectorAll('[data-i18n]').forEach(function (el) { var key = el.getAttribute('data-i18n'); if (dict[key]) el.innerHTML = dict[key]; }); var labels = { en: 'EN', 'zh-hant': '繁', 'zh-hans': '简' }; document.getElementById('localeBtn').textContent = labels[lang] || 'EN'; document.documentElement.lang = lang === 'en' ? 'en' : (lang === 'zh-hant' ? 'zh-Hant' : 'zh-Hans'); try { localStorage.setItem('studiodesk_locale', lang); } catch (e) {} }
+var sw = document.getElementById('localeSwitch');
+var btn = document.getElementById('localeBtn');
+btn.addEventListener('click', function () { sw.classList.toggle('open'); btn.setAttribute('aria-expanded', sw.classList.contains('open')); });
+document.addEventListener('click', function (e) { if (!sw.contains(e.target)) sw.classList.remove('open'); });
+document.querySelectorAll('.locale-menu button').forEach(function (b) { b.addEventListener('click', function () { applyLocale(b.getAttribute('data-locale')); sw.classList.remove('open'); }); });
+(function initLocale() { var saved = null; try { saved = localStorage.getItem('studiodesk_locale'); } catch (e) {} var path = window.location.pathname; var initial = saved || (path.indexOf('/cn/') !== -1 ? 'zh-hans' : 'en'); applyLocale(initial); })();
+</script>
+</body>
+</html>
