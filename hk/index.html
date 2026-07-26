@@ -203,7 +203,7 @@ var btn = document.getElementById('localeBtn');
 btn.addEventListener('click', function () { sw.classList.toggle('open'); btn.setAttribute('aria-expanded', sw.classList.contains('open')); });
 document.addEventListener('click', function (e) { if (!sw.contains(e.target)) sw.classList.remove('open'); });
 document.querySelectorAll('.locale-menu button').forEach(function (b) { b.addEventListener('click', function () { applyLocale(b.getAttribute('data-locale')); sw.classList.remove('open'); }); });
-(function initLocale() { var saved = null; try { saved = localStorage.getItem('studiodesk_locale'); } catch (e) {} var path = window.location.pathname; var initial = saved || (path.indexOf('/hk/') !== -1 ? 'zh-hant' : 'en'); applyLocale(initial); })();
+(function initLocale() { var saved = null; try { saved = localStorage.getItem('studiodesk_locale'); } catch (e) {} var path = window.location.pathname; var initial = saved || ((path.indexOf('/cn') === 0 || path.indexOf('/hk') === 0) ? (path.indexOf('/hk') === 0 ? 'zh-hant' : 'zh-hans') : 'en'); applyLocale(initial); })();
 </script>
 </body>
 </html>
