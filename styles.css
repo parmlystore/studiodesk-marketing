@@ -82,6 +82,17 @@ img { max-width: 100%; }
 .popular-badge { position: absolute; top: 0; left: 0; right: 0; text-align: center; transform: translateY(-50%); }
 .popular-badge span { background: var(--plum); color: var(--cream); font-family: var(--font-label); font-size: 11px; letter-spacing: 0.1em; text-transform: uppercase; padding: 6px 18px; display: inline-block; }
 
+/* ---------- Compare table ---------- */
+.compare { padding: 100px 64px; background: var(--cream); }
+.compare-table-wrap { max-width: 900px; margin: 0 auto; overflow-x: auto; border: 1px solid var(--hairline-strong); }
+.compare-table { width: 100%; border-collapse: collapse; font-size: 14px; }
+.compare-table th, .compare-table td { padding: 16px 20px; text-align: center; border-bottom: 1px solid var(--hairline); }
+.compare-table td:first-child, .compare-table th:first-child { text-align: left; font-weight: 500; }
+.compare-table thead th { font-family: var(--font-display); font-weight: 500; font-size: 16px; background: var(--band-light); }
+.compare-price { display: block; font-family: var(--font-label); font-size: 11px; color: var(--body-text-soft); font-weight: 400; text-transform: uppercase; letter-spacing: 0.04em; margin-top: 4px; }
+.compare-table tbody tr:last-child td { border-bottom: none; }
+.compare-table td:not(:first-child) { color: var(--plum); font-weight: 600; }
+
 /* ---------- CTA band ---------- */
 .cta-band { background: var(--plum); color: var(--cream); text-align: center; padding: 100px 64px; }
 .cta-band h2 { font-family: var(--font-display); font-weight: 500; font-style: italic; font-size: 40px; margin: 0 0 20px; letter-spacing: -0.01em; }
